@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="button2"><a href="index.html">главная</a></button>
+    <br>
+    <br>
+    <form>
+        <legend>Создать категорию</legend>
+        <label for="">Название категории</label>
+        <input type="text" name="catrerogy" id="catrerogy">
+        <label for="">Изображение</label>
+        <input type="text" name="image" id="image">
+        <button type="button" id="button1">Добавить категорию</button>
+    </form>
+    <br>
+    <br>
+    <form>
+        <legend>Создание товара в категории</legend>
+        <label for="">title</label>
+        <input type="text" id="title">
+        <label for="">price</label>
+        <input type="number" id="price">
+        <label for="">descrition</label>
+        <input type="text"  id="description">
+        <label for="">foto url</label>
+        <input type="text" id="foto">
+        <label for="">category</label>
+        <select name="category" class="category" id="categoryForProduct">
+        </select>
+        <button type="button" id="button">Добавить товар</button>
+    </form>
+    <br>
+    <br>
+ <button type="button" id="button3" onclick="delcategory()">Удалить категорию</button>
+    <select name="category" class="category" id="categoryDel" class="category_vibor">
+        
+    </select>
+   
+    <div class="pop" id="pop">
+
+    </div>
+    
+    <script src="js/ad.js"></script>
+</body>
+</html>
